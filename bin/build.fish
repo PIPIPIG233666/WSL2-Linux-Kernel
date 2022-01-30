@@ -15,4 +15,4 @@ else
     set kmake_args $argv
 end
 
-PO="$build_po" kmake HOSTLDFLAGS=-fuse-ld=lld LLVM=1 $kmake_args
+PO="$build_po" make HOSTLDFLAGS=-fuse-ld=lld LLVM=1 $kmake_args -j16
