@@ -1,7 +1,5 @@
 #!/usr/bin/env fish
 
-in_container; or exit
-
 set bin_folder (realpath (status dirname))
 set krnl_src (dirname $bin_folder)
 
