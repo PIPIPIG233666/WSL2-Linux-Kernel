@@ -20,15 +20,9 @@ sudo rm -rf /lib/modules/**'''
       }
     }
 
-    stage('Kconfig') {
-      steps {
-        sh 'make O=out laptop_defconfig'
-      }
-    }
-
     stage('Kbuild') {
       steps {
-        sh 'make -j16 O=out'
+        sh 'bin/build.fish'
       }
     }
 
