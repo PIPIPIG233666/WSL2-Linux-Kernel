@@ -10,12 +10,12 @@ pipeline {
           }
         }
 
-        stage('Rm old kernel') {
+        /*stage('Rm old kernel') {
           steps {
-            //sh '''sudo rm -rf /boot/**5.**
-//sudo rm -rf /lib/modules/**'''
+            sh '''sudo rm -rf /boot/**5.**
+sudo rm -rf /lib/modules/**'''
           }
-        }
+        }*/
 
       }
     }
